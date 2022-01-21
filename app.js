@@ -17,7 +17,7 @@ app.get("/testEventBroadcastTrigger", (req, res) => {
   //use channel name and event name (of your choice)
   //everytime this api is called pusher will broadcast an event
   //the client on the other side will be listening
-  //use unique useranme to broadcast to that specific channel
+  //use unique username to broadcast to specific channel
   pusher.trigger("moses-channel" + "-username", "moses-event", {
     message: "Broadcasting an event"
   });
